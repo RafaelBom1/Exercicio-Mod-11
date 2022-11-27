@@ -1,0 +1,183 @@
+:root {
+    /*Paleta de cores: https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557 */
+    --cor1clara: #A8DADC;
+    --cor1media: #457B9D;
+    --cor1escura: #1D3557;
+    --cor2clara: #F1FAEE;
+    --cor3media: #E63946;
+  }
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--cor2clara);  
+    font-family: 'Open Sans', sans-serif;  
+}
+
+.main-container {    
+    display: block;
+    width: 100vw;
+    margin: 0 auto;    
+}
+
+/*Não vejo efeito ao deletar essa parte*/
+.container {
+    display: block;    
+    width: 100%;     
+}
+
+header {
+    background-color: var(--cor1clara);
+    display: block;
+    float: left;
+    padding: 20px;
+    width: 100%;
+    border-bottom: 1px solid var(--cor1escura);
+}
+
+h1 {
+    font-size: 2.4rem;
+    color: var(--cor1escura);
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: var(--cor1escura);
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 2rem;
+    color: var(--cor1escura);
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+h4 {
+    font-size: 1.8rem;
+    color: var(--cor1escura);
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+p {
+    font-size: 1.4rem;    
+    margin-bottom: 10px;
+    line-height: 1.4; /*Espaçamento entre linhas = 40% do tamanho da fonte*/
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ol {
+    margin-left: 15px;
+}
+
+ol li {
+    font-size: 1.4rem;
+    color: var(--cor1escura);
+}
+
+section {
+    display: block;
+    float: left;
+    background-color: var(--cor2clara);
+    width: 100%;
+    font-size: 1.5rem; /*equivalente à 15px*/
+    padding: 20px 0 20px 0;
+}
+
+section nav {
+    display: block;
+    float: left;
+    width: 20%;    
+}
+
+nav li {
+    margin: 5px 20px 1px 0;
+    padding: 10px 5px;
+    background-color: var(--cor1clara);
+}
+
+nav li:hover {
+    background-color: var(--cor1media);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor1escura)
+}
+
+nav li:hover a {
+    color: var(--cor2clara)
+}
+
+section article {
+    display: block;
+    float: left;
+    width: 75%;    
+}
+
+footer {
+    background-color: var(--cor1media);
+    font: #ffffff;
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+
+footer p {
+    color: var(--cor2clara);
+    font-size: 1.4rem;
+}
+
+footer small { 
+    font-size: 80%; /*80% do paragrafo*/
+    display: block; /*Quebra de linha*/
+}
+
+/*Estilo do formulário do Cognito*/
+
+#tenho-interesse {
+    background-color: var(--cor1clara);
+    width: 100%;
+    text-align: center;    
+}
+
+.cognito {
+    height: 420px !important;
+    overflow: hidden !important;
+    display: flex;    
+    justify-content: center;     
+}
+
+
+/*Usar o Inspetor do navegador para saber qual é a class ou id*/
+.cog-form__content {
+    background-color: var(--cor1clara) !important;
+}
+
+html .cog-cognito--styled .cog-button--primary, html .cog-cognito--styled .cog-page__navigation .cog-button, :root:root:root:root:root .cog-cognito--styled .cog-button--primary, :root:root:root:root:root .cog-cognito--styled .cog-page__navigation .cog-button {
+    background-color: var(--cor1escura) !important;
+}
+
+/*AJUSTAR A RESPONSIVIDADE DO LAYOUT*/
+
+@media (max-width: 425px) {
+    section nav,
+    section article {
+        width: 100%;
+    }  
+
+    .container {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+}
